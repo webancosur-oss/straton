@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* ================================
+     STRATON BRAND
+  ================================= */
+
+  --color-primary: #154d5e;
+  --color-primary-dark: #0b3440;
+  --color-primary-deep: #072630;
+  --color-primary-light: #286d7e;
+  --color-primary-soft: #dcebed;
+
+  /* Accent */
+  --color-accent: #d5a84b;
+  --color-accent-light: #e5ca8b;
+  --color-accent-dark: #ae8330;
+
+  /* Neutral */
+  --color-white: #ffffff;
+  --color-off-white: #f5f7f6;
+
+  --color-gray-50: #fafbfb;
+  --color-gray-100: #eef2f2;
+  --color-gray-200: #dde4e5;
+  --color-gray-300: #c5d0d2;
+  --color-gray-400: #95a5a9;
+  --color-gray-500: #718187;
+  --color-gray-600: #526267;
+
+  --color-dark: #172326;
+  --color-black: #0a1012;
+
+  /* Typography */
+  --font-heading: 'Manrope', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+
+  /* Layout */
+  --container-width: 1440px;
+  --container-padding: clamp(20px, 5vw, 80px);
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+
+  /* Motion */
+  --ease-straton: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --transition-fast: 0.25s var(--ease-straton);
+  --transition-normal: 0.45s var(--ease-straton);
+  --transition-slow: 0.8s var(--ease-straton);
+}
+
+/* ================================
+   RESET
+================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--color-white);
+}
+
+body {
+  min-height: 100vh;
+
+  background: var(--color-white);
+  color: var(--color-dark);
+
+  font-family: var(--font-body);
+
+  overflow-x: hidden;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* ================================
+   LAYOUT
+================================ */
+
+.container {
+  width: min(
+    calc(100% - (var(--container-padding) * 2)),
+    var(--container-width)
+  );
+
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: clamp(90px, 10vw, 160px);
+}
+
+.section-dark {
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+.section-light {
+  background: var(--color-off-white);
+}
+
+/* ================================
+   TYPOGRAPHY
+================================ */
+
+.display-title {
+  font-family: var(--font-heading);
+  font-size: clamp(52px, 8vw, 132px);
+  line-height: 0.9;
+  letter-spacing: -0.055em;
+  font-weight: 700;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(40px, 5vw, 76px);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+  font-weight: 700;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  color: var(--color-primary);
+
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.eyebrow::after {
+  content: '';
+
+  width: 48px;
+  height: 1px;
+
+  background: currentColor;
+}
+
+.eyebrow-light {
+  color: var(--color-accent-light);
+}
+
+/* ================================
+   ACCESSIBILITY
+================================ */
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+  .section {
+    padding-block: 80px;
+  }
+
+  .display-title {
+    font-size: clamp(48px, 14vw, 82px);
+  }
+
+  .section-title {
+    font-size: clamp(38px, 11vw, 60px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

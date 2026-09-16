@@ -1,0 +1,29 @@
+.section {
+  padding-block: clamp(100px, 12vw, 170px);
+
+  background: var(--color-white);
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 50px;
+
+  margin-bottom: 75px;
+}
+
+.header :global(.section-title span) {
+  color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .header {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    margin-bottom: 50px;
+  }
+}

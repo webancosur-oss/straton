@@ -1,0 +1,268 @@
+.footer {
+  background: #102f38;
+  color: #fff;
+}
+
+.container {
+  width: min(100% - 100px, 1380px);
+  margin: 0 auto;
+}
+
+/* =====================================
+   TOP
+===================================== */
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+  padding: 58px 0 52px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo {
+  display: inline-block;
+  color: #fff;
+  font-size: 2.9rem;
+  font-weight: 600;
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.logo:hover {
+  color: #c8a96b;
+}
+
+.tagline {
+  margin: 18px 0 0;
+  color: #91a7ac;
+  font-size: 0.76rem;
+  line-height: 1.65;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-self: end;
+}
+
+.contactLabel {
+  margin-bottom: 12px;
+  color: #71878d;
+  font-size: 0.61rem;
+  font-weight: 600;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.contact a {
+  color: #dce5e6;
+  font-size: 0.78rem;
+  line-height: 1.8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact a:hover {
+  color: #c8a96b;
+}
+
+/* =====================================
+   CONTENT
+===================================== */
+
+.content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 80px;
+  padding: 45px 0 48px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.heading {
+  margin: 0 0 17px;
+  color: #71878d;
+  font-size: 0.61rem;
+  font-weight: 600;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.column nav,
+.list,
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.column nav a,
+.list span,
+.contactDetails a {
+  color: #b9c9cc;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.column nav a:hover,
+.contactDetails a:hover {
+  color: #fff;
+}
+
+.list span {
+  color: #91a5a9;
+}
+
+/* =====================================
+   BOTTOM
+===================================== */
+
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+  min-height: 52px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #657d82;
+  font-size: 0.59rem;
+  line-height: 1.5;
+}
+
+.bottom span:nth-child(2) {
+  text-align: center;
+}
+
+.bottom a {
+  color: #657d82;
+  text-align: right;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.bottom a:hover {
+  color: #c8a96b;
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 850px) {
+  .container {
+    width: min(100% - 70px, 720px);
+  }
+
+  .top {
+    gap: 50px;
+    padding: 50px 0 45px;
+  }
+
+  .content {
+    gap: 45px;
+    padding: 40px 0 45px;
+  }
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+  .container {
+    width: calc(100% - 44px);
+  }
+
+  .top {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 45px 0 38px;
+  }
+
+  .logo {
+    font-size: 2.8rem;
+  }
+
+  .tagline {
+    margin-top: 15px;
+    font-size: 0.72rem;
+  }
+
+  .contact {
+    justify-self: start;
+  }
+
+  .content {
+    grid-template-columns: 1fr 1fr;
+    gap: 38px 25px;
+    padding: 38px 0 42px;
+  }
+
+  .column:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .heading {
+    margin-bottom: 15px;
+  }
+
+  .column nav,
+  .list,
+  .contactDetails {
+    gap: 6px;
+  }
+
+  .column nav a,
+  .list span,
+  .contactDetails a {
+    font-size: 0.73rem;
+  }
+
+  .bottom {
+    grid-template-columns: 1fr;
+    gap: 7px;
+    padding: 18px 0 22px;
+  }
+
+  .bottom span:nth-child(2),
+  .bottom a {
+    text-align: left;
+  }
+}
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media (max-width: 400px) {
+  .container {
+    width: calc(100% - 36px);
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .column:last-child {
+    grid-column: auto;
+  }
+}

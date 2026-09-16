@@ -1,0 +1,499 @@
+/* =========================================================
+   HEADER — STRATON
+   ========================================================= */
+
+.header {
+  position: fixed;
+
+  top: 0;
+  right: 0;
+  left: 0;
+
+  z-index: 1000;
+
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.92);
+
+  border-bottom: 1px solid rgba(21, 77, 94, 0.08);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  transition:
+    background 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+
+/* =========================================================
+   SCROLLED
+   ========================================================= */
+
+.header.scrolled {
+  background: rgba(255, 255, 255, 0.97);
+
+  border-bottom-color: rgba(21, 77, 94, 0.1);
+
+  box-shadow:
+    0 10px 35px rgba(10, 42, 51, 0.06);
+}
+
+
+/* =========================================================
+   INNER
+   ========================================================= */
+
+.inner {
+  width: min(
+    calc(100% - 64px),
+    1480px
+  );
+
+  min-height: 88px;
+
+  margin-inline: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+
+  width: max-content;
+
+  flex-shrink: 0;
+
+  color: var(--color-primary);
+
+  text-decoration: none;
+}
+
+.logoImage {
+  display: block;
+
+  width: 180px;
+  height: auto;
+
+  max-width: 100%;
+
+  object-fit: contain;
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.3s ease;
+}
+
+.logo:hover .logoImage {
+  opacity: 0.88;
+}
+
+
+/* =========================================================
+   DESKTOP NAVIGATION
+   ========================================================= */
+
+.desktopNav {
+  display: flex;
+  align-items: center;
+
+  gap: clamp(
+    25px,
+    3vw,
+    48px
+  );
+
+  margin-left: auto;
+
+  margin-right: clamp(
+    30px,
+    4vw,
+    65px
+  );
+}
+
+.navLink {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+
+  padding: 10px 0;
+
+  color: var(--color-gray-600);
+
+  font-size: 9px;
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: 0.13em;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  transition:
+    color 0.25s ease;
+}
+
+.navLink::after {
+  content: '';
+
+  position: absolute;
+
+  right: 0;
+  bottom: 1px;
+  left: 0;
+
+  width: 0;
+  height: 1px;
+
+  margin-inline: auto;
+
+  background: var(--color-primary);
+
+  transition:
+    width 0.35s cubic-bezier(
+      0.22,
+      0.61,
+      0.36,
+      1
+    );
+}
+
+.navLink:hover {
+  color: var(--color-primary);
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+
+/* =========================================================
+   ACTIVE
+   ========================================================= */
+
+.navLink.active {
+  color: var(--color-primary);
+
+  font-weight: 800;
+}
+
+.navLink.active::after {
+  width: 100%;
+}
+
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.actions {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   CONTACT BUTTON
+   ========================================================= */
+
+.contactButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 13px;
+
+  min-height: 44px;
+
+  padding: 0 21px;
+
+  border: 1px solid var(--color-primary);
+
+  background: var(--color-primary);
+
+  color: var(--color-white);
+
+  font-size: 8px;
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.contactButton:hover {
+  background: var(--color-primary-dark);
+
+  border-color: var(--color-primary-dark);
+
+  color: var(--color-white);
+
+  transform: translateY(-2px);
+}
+
+.contactButton svg {
+  transition:
+    transform 0.3s ease;
+}
+
+.contactButton:hover svg {
+  transform: translate(
+    3px,
+    -3px
+  );
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+   ========================================================= */
+
+.menuButton {
+  display: none;
+
+  width: 44px;
+  height: 44px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  gap: 6px;
+
+  cursor: pointer;
+}
+
+.menuButton span {
+  display: block;
+
+  width: 21px;
+  height: 1px;
+
+  background: var(--color-primary);
+
+  transition:
+    width 0.3s ease,
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.menuButton:hover span:first-child {
+  width: 16px;
+}
+
+.menuButton:hover span:last-child {
+  width: 21px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .inner {
+    width: min(
+      calc(100% - 40px),
+      1480px
+    );
+
+    gap: 25px;
+  }
+
+  .logoImage {
+    width: 165px;
+  }
+
+  .desktopNav {
+    gap: 22px;
+
+    margin-right: 25px;
+  }
+
+  .navLink {
+    font-size: 8px;
+  }
+
+  .contactButton {
+    min-height: 42px;
+
+    padding: 0 17px;
+
+    font-size: 7px;
+  }
+}
+
+
+/* =========================================================
+   SMALL TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+  .inner {
+    min-height: 80px;
+  }
+
+  .desktopNav {
+    gap: 18px;
+
+    margin-right: 18px;
+  }
+
+  .navLink {
+    font-size: 7px;
+
+    letter-spacing: 0.1em;
+  }
+
+  .contactButton {
+    padding-inline: 14px;
+
+    gap: 9px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .header {
+    background: rgba(
+      255,
+      255,
+      255,
+      0.95
+    );
+
+    box-shadow:
+      0 8px 28px
+      rgba(
+        10,
+        42,
+        51,
+        0.05
+      );
+  }
+
+  .inner {
+    width: calc(100% - 32px);
+
+    min-height: 74px;
+  }
+
+  .desktopNav {
+    display: none;
+  }
+
+  .contactButton {
+    display: none;
+  }
+
+  .menuButton {
+    display: flex;
+  }
+
+  .logoImage {
+    width: 155px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE SMALL
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .inner {
+    width: calc(100% - 28px);
+
+    min-height: 68px;
+  }
+
+  .logoImage {
+    width: 145px;
+  }
+
+  .menuButton {
+    width: 42px;
+    height: 42px;
+  }
+
+  .menuButton span {
+    width: 20px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 380px) {
+  .inner {
+    width: calc(100% - 24px);
+  }
+
+  .logoImage {
+    width: 135px;
+  }
+
+  .menuButton {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .header,
+  .logoImage,
+  .navLink,
+  .navLink::after,
+  .contactButton,
+  .contactButton svg,
+  .menuButton span {
+    transition: none;
+  }
+}
