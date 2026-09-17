@@ -1,45 +1,69 @@
 .wrapper {
+  position: relative;
+
   display: grid;
 
   grid-template-columns: 0.9fr 1.1fr;
 
+  width: 100%;
   min-height: 570px;
 
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgb(11, 52, 64);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+
+  color: #ffffff;
 }
 
-/* NAVIGATION */
+/* ==================================================
+   NAVEGACIÓN
+================================================== */
 
 .navigation {
+  position: relative;
+
   display: flex;
   flex-direction: column;
 
-  border-right: 1px solid rgba(255, 255, 255, 0.12);
+  min-width: 0;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .navItem {
   position: relative;
 
-  min-height: 90px;
+  flex: 1;
 
-  padding: 0 28px;
+  width: 100%;
+  min-height: 82px;
 
-  display: grid;
-  grid-template-columns: 45px 1fr 25px;
+  display: flex;
+
   align-items: center;
+
+  gap: 18px;
+
+  padding: 0 32px;
 
   background: transparent;
 
-  color: rgba(255, 255, 255, 0.45);
-
+  border: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  color: rgba(255, 255, 255, 0.48);
+
+  font-family: inherit;
 
   text-align: left;
 
+  cursor: pointer;
+
   transition:
-    color var(--transition-normal),
-    padding-left var(--transition-normal);
+    color 0.35s ease,
+    background-color 0.35s ease,
+    padding-left 0.35s ease;
 }
 
 .navItem:last-child {
@@ -51,151 +75,296 @@
 
   position: absolute;
 
-  left: 0;
   top: 0;
   bottom: 0;
+  left: 0;
 
-  width: 3px;
+  width: 2px;
 
-  background: var(--color-accent);
+  background: #d8b24c;
 
   transform: scaleY(0);
 
   transform-origin: center;
 
-  transition: transform var(--transition-normal);
+  transition: transform 0.35s ease;
 }
 
-.navItem:hover,
-.navItem.active {
-  color: var(--color-white);
+.navItem:hover {
+  padding-left: 40px;
 
-  padding-left: 36px;
+  background: rgba(255, 255, 255, 0.025);
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.navItem.active {
+  padding-left: 40px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  color: #ffffff;
 }
 
 .navItem.active::before {
   transform: scaleY(1);
 }
 
-.navItem span {
-  color: var(--color-accent);
+/* Punto */
 
-  font-size: 9px;
-  font-weight: 700;
+.navDot {
+  width: 5px;
+  height: 5px;
+
+  flex: 0 0 5px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.35);
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.navItem.active .navDot {
+  background: #d8b24c;
+
+  transform: scale(1.35);
 }
 
 .navItem strong {
+  margin: 0;
+
   font-family: var(--font-heading);
 
   font-size: 16px;
-  font-weight: 600;
+
+  font-weight: 500;
+
+  line-height: 1;
 
   letter-spacing: -0.02em;
 }
 
-.navItem svg {
-  opacity: 0;
-
-  transition: opacity var(--transition-normal);
-}
-
-.navItem:hover svg,
-.navItem.active svg {
-  opacity: 1;
-}
-
-/* DETAIL */
+/* ==================================================
+   DETAIL
+================================================== */
 
 .detail {
   position: relative;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  min-width: 0;
+  min-height: 570px;
 
-  padding: clamp(40px, 7vw, 100px);
+  display: flex;
+
+  align-items: center;
+
+  padding: clamp(55px, 7vw, 100px);
 
   overflow: hidden;
+
+  isolation: isolate;
 }
 
-.detailNumber {
+/* ==================================================
+   PALABRA DE FONDO
+================================================== */
+
+.backgroundWord {
   position: absolute;
 
-  top: 35px;
-  right: 40px;
+  z-index: -1;
 
-  color: rgba(255, 255, 255, 0.08);
+  top: 50%;
+  left: 50%;
+
+  width: 100%;
+
+  transform: translate(-50%, -50%);
+
+  color: rgba(255, 255, 255, 0.075);
 
   font-family: var(--font-heading);
 
-  font-size: clamp(100px, 18vw, 250px);
+  font-size: clamp(85px, 11vw, 175px);
 
-  font-weight: 800;
+  font-weight: 700;
 
-  line-height: 0.8;
+  line-height: 0.82;
 
-  letter-spacing: -0.08em;
+  letter-spacing: -0.075em;
+
+  text-align: center;
+
+  white-space: nowrap;
+
+  pointer-events: none;
+
+  user-select: none;
 }
+
+/* ==================================================
+   CONTENIDO
+================================================== */
 
 .detailContent {
   position: relative;
 
   z-index: 2;
 
-  max-width: 560px;
+  width: 100%;
+  max-width: 570px;
+}
+
+.detailNumber {
+  display: block;
+
+  margin-bottom: 22px;
+
+  color: #d8b24c;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: 0.18em;
+
+  text-transform: uppercase;
 }
 
 .detailContent h3 {
+  margin: 0;
+
+  color: #ffffff;
+
   font-family: var(--font-heading);
 
-  font-size: clamp(48px, 6vw, 90px);
+  font-size: clamp(52px, 6vw, 88px);
 
-  line-height: 0.9;
+  font-weight: 400;
 
-  letter-spacing: -0.055em;
+  line-height: 0.88;
+
+  letter-spacing: -0.06em;
 }
 
 .detailContent p {
-  max-width: 480px;
+  max-width: 470px;
 
-  margin-top: 30px;
+  margin: 28px 0 0;
 
   color: rgba(255, 255, 255, 0.62);
 
-  font-size: 15px;
+  font-size: 14px;
 
   line-height: 1.8;
 }
 
-.detailMark {
+/* ==================================================
+   MARCA INFERIOR
+================================================== */
+
+.detailLabel {
   position: absolute;
 
-  right: 40px;
-  bottom: 35px;
+  right: 38px;
+  bottom: 30px;
 
-  color: var(--color-accent);
+  color: rgba(255, 255, 255, 0.32);
 
-  font-size: 9px;
+  font-size: 8px;
+
   font-weight: 700;
 
+  line-height: 1;
+
   letter-spacing: 0.18em;
+
+  text-transform: uppercase;
 }
 
-/* MOBILE */
+/* ==================================================
+   TABLET
+================================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
+  .wrapper {
+    grid-template-columns: 0.85fr 1.15fr;
+
+    min-height: 520px;
+  }
+
+  .detail {
+    min-height: 520px;
+
+    padding: 55px;
+  }
+
+  .backgroundWord {
+    font-size: clamp(75px, 12vw, 145px);
+  }
+
+  .detailContent h3 {
+    font-size: clamp(48px, 6vw, 72px);
+  }
+}
+
+/* ==================================================
+   TABLET PEQUEÑO
+================================================== */
+
+@media (max-width: 780px) {
   .wrapper {
     grid-template-columns: 1fr;
-
-    min-height: auto;
   }
 
   .navigation {
     border-right: 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
   }
 
   .navItem {
-    min-height: 75px;
+    flex: none;
+
+    min-height: 72px;
+
+    padding-inline: 24px;
+  }
+
+  .navItem:hover,
+  .navItem.active {
+    padding-left: 31px;
+  }
+
+  .detail {
+    min-height: 450px;
+
+    padding: 65px 40px;
+  }
+
+  .backgroundWord {
+    font-size: clamp(80px, 17vw, 135px);
+  }
+}
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 600px) {
+  .wrapper {
+    min-height: auto;
+  }
+
+  .navItem {
+    min-height: 68px;
+
+    gap: 14px;
 
     padding-inline: 20px;
   }
@@ -205,29 +374,99 @@
     padding-left: 27px;
   }
 
+  .navItem strong {
+    font-size: 15px;
+  }
+
   .detail {
     min-height: 400px;
 
-    padding: 50px 25px;
+    padding: 65px 24px 75px;
+
+    align-items: center;
+  }
+
+  .backgroundWord {
+    width: 130%;
+
+    font-size: clamp(62px, 18vw, 105px);
+
+    letter-spacing: -0.07em;
+  }
+
+  .detailContent {
+    max-width: 100%;
   }
 
   .detailNumber {
-    top: 25px;
-    right: 20px;
-
-    font-size: 130px;
+    margin-bottom: 18px;
   }
 
   .detailContent h3 {
-    font-size: 58px;
+    font-size: clamp(48px, 15vw, 65px);
   }
 
   .detailContent p {
-    font-size: 14px;
+    max-width: 340px;
+
+    margin-top: 22px;
+
+    font-size: 12px;
+
+    line-height: 1.75;
   }
 
-  .detailMark {
-    right: 25px;
-    bottom: 25px;
+  .detailLabel {
+    right: 24px;
+    bottom: 23px;
+
+    font-size: 7px;
+  }
+}
+
+/* ==================================================
+   MOBILE PEQUEÑO
+================================================== */
+
+@media (max-width: 400px) {
+  .navItem {
+    min-height: 62px;
+  }
+
+  .detail {
+    min-height: 370px;
+
+    padding: 55px 20px 65px;
+  }
+
+  .backgroundWord {
+    width: 140%;
+
+    font-size: 58px;
+  }
+
+  .detailContent h3 {
+    font-size: 44px;
+  }
+
+  .detailContent p {
+    font-size: 11px;
+  }
+
+  .detailLabel {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+/* ==================================================
+   ACCESIBILIDAD
+================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .navItem,
+  .navItem::before,
+  .navDot {
+    transition: none;
   }
 }

@@ -1,3 +1,10 @@
+import {
+  Layers3,
+  ClipboardCheck,
+  Activity,
+  TrendingUp,
+} from 'lucide-react';
+
 import Container from '@/components/ui/Container';
 import Reveal from '@/components/ui/Reveal';
 
@@ -5,22 +12,22 @@ import styles from './Differentials.module.css';
 
 const items = [
   {
-    number: '01',
+    icon: Layers3,
     title: 'Visión integral',
     text: 'Entendemos el proyecto como un sistema donde cada decisión está conectada.',
   },
   {
-    number: '02',
+    icon: ClipboardCheck,
     title: 'Planificación',
     text: 'Anticipamos variables para reducir incertidumbre antes de llegar a campo.',
   },
   {
-    number: '03',
+    icon: Activity,
     title: 'Control',
     text: 'Medimos el avance y las variables críticas durante la ejecución.',
   },
   {
-    number: '04',
+    icon: TrendingUp,
     title: 'Valor',
     text: 'Buscamos que cada decisión contribuya al resultado final del proyecto.',
   },
@@ -33,7 +40,7 @@ export default function Differentials() {
         <div className={styles.intro}>
           <Reveal>
             <span className={styles.eyebrow}>
-              05 — Diferenciales
+              Lo que nos diferencia
             </span>
 
             <h2>
@@ -41,24 +48,42 @@ export default function Differentials() {
               <br />
               empieza <em>antes.</em>
             </h2>
+
+            <p className={styles.introText}>
+              Nuestra forma de trabajar parte de una visión
+              integral del proyecto, donde anticipar, coordinar
+              y controlar permite construir con mayor claridad.
+            </p>
           </Reveal>
         </div>
 
         <div className={styles.grid}>
-          {items.map((item, index) => (
-            <Reveal
-              key={item.number}
-              delay={index * 0.08}
-            >
-              <article className={styles.item}>
-                <span>{item.number}</span>
+          {items.map((item, index) => {
+            const Icon = item.icon;
 
-                <h3>{item.title}</h3>
+            return (
+              <Reveal
+                key={item.title}
+                delay={index * 0.08}
+              >
+                <article className={styles.item}>
+                  <div className={styles.icon}>
+                    <Icon
+                      size={25}
+                      strokeWidth={1.35}
+                      aria-hidden="true"
+                    />
+                  </div>
 
-                <p>{item.text}</p>
-              </article>
-            </Reveal>
-          ))}
+                  <div className={styles.content}>
+                    <h3>{item.title}</h3>
+
+                    <p>{item.text}</p>
+                  </div>
+                </article>
+              </Reveal>
+            );
+          })}
         </div>
       </Container>
     </section>

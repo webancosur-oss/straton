@@ -27,17 +27,19 @@ export default function MethodologyPrinciples() {
     <section className={styles.section}>
       <Container>
         <Reveal>
-          <span className={styles.eyebrow}>
-            Principios de trabajo
-          </span>
+          <div className={styles.intro}>
+            <span className={styles.eyebrow}>
+              Principios de trabajo
+            </span>
 
-          <h2>
-            Una metodología
-            <br />
-            pensada para
-            <br />
-            <span>reducir incertidumbre.</span>
-          </h2>
+            <h2>
+              Una metodología
+              <br />
+              pensada para
+              <br />
+              <span>reducir incertidumbre.</span>
+            </h2>
+          </div>
         </Reveal>
 
         <div className={styles.grid}>
@@ -47,9 +49,13 @@ export default function MethodologyPrinciples() {
               delay={index * 0.08}
             >
               <article className={styles.item}>
-                <h3>{item.title}</h3>
+                <div className={styles.marker} />
 
-                <p>{item.text}</p>
+                <div className={styles.content}>
+                  <h3>{item.title}</h3>
+
+                  <p>{item.text}</p>
+                </div>
               </article>
             </Reveal>
           ))}

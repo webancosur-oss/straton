@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { ArrowUpRight } from 'lucide-react';
 
 import styles from './MethodologySteps.module.css';
 
@@ -22,45 +21,49 @@ export default function MethodologySteps({
 
   const current = steps[active];
 
+  if (!current) {
+    return null;
+  }
+
   return (
     <div className={styles.wrapper}>
+
+      {/* Navegación */}
       <div className={styles.navigation}>
         {steps.map((step, index) => (
           <button
-            key={step.number}
+            key={`${step.title}-${index}`}
             type="button"
-            className={`
-              ${styles.navItem}
-              ${active === index ? styles.active : ''}
-            `}
+            className={`${styles.navItem} ${
+              active === index ? styles.active : ''
+            }`}
             onClick={() => setActive(index)}
           >
-            <span>{step.number}</span>
+            <span className={styles.navDot} />
 
             <strong>{step.title}</strong>
-
-            <ArrowUpRight
-              size={18}
-              strokeWidth={1.5}
-            />
           </button>
         ))}
       </div>
 
+      {/* Contenido */}
       <div className={styles.detail}>
-        <span className={styles.detailNumber}>
-          {current.number}
-        </span>
+
+        {/* Tipografía decorativa de fondo */}
+        <div
+          className={styles.backgroundWord}
+          aria-hidden="true"
+        >
+          {current.title}
+        </div>
 
         <div className={styles.detailContent}>
+
           <h3>{current.title}</h3>
 
           <p>{current.description}</p>
         </div>
 
-        <div className={styles.detailMark}>
-          STRATON
-        </div>
       </div>
     </div>
   );
