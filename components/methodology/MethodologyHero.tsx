@@ -10,8 +10,8 @@ export default function MethodologyHero() {
     <section className={styles.hero}>
       <div className={styles.background}>
         <Image
-          src="/images/methodology/plano-lotizacion.webp"
-          alt="Plano maestro de lotización"
+          src="/images/methodology/equipo-planos.webp"
+          alt="Equipo de STRATON revisando planos en obra"
           fill
           priority
           sizes="100vw"

@@ -32,7 +32,7 @@
   height: 100%;
 
   background-image:
-    url('/images/hero/edificio-residencial.webp');
+    url('/images/hero/obra-atardecer.webp');
 
   background-size: cover;
   background-position: center 45%;
@@ -160,7 +160,7 @@
 
   font-weight: 700;
 
-  line-height: 0.84;
+  line-height: 0.96;
 
   letter-spacing: -0.065em;
 }
@@ -530,7 +530,7 @@
       88px
     );
 
-    line-height: 0.87;
+    line-height: 0.96;
 
     letter-spacing: -0.07em;
   }
@@ -604,7 +604,7 @@
   .title {
     font-size: 3.2rem;
 
-    line-height: 0.88;
+    line-height: 0.96;
   }
 
   .description {

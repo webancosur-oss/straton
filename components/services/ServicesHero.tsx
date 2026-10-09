@@ -10,8 +10,8 @@ export default function ServicesHero() {
     <section className={styles.hero}>
       <div className={styles.background}>
         <Image
-          src="/images/services/edificio-fachada.webp"
-          alt="Edificio residencial en construcción"
+          src="/images/services/ingeniero-obra.webp"
+          alt="Ingeniero de STRATON supervisando una obra"
           fill
           priority
           sizes="100vw"

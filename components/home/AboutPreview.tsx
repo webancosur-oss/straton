@@ -48,8 +48,8 @@ export default function AboutPreview() {
             <Reveal delay={0.1}>
               <div className={styles.imageWrapper}>
                 <Image
-                  src="/images/about/torre-contrapicado.webp"
-                  alt="Arquitectura contemporánea y construcción"
+                  src="/images/about/ingeniero-supervisando-obra.webp"
+                  alt="Ingeniero de STRATON supervisando una obra en construcción"
                   fill
                   sizes="(max-width: 900px) 100vw, 55vw"
                   className={styles.image}

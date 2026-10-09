@@ -85,7 +85,7 @@
     145px
   );
 
-  line-height: .85;
+  line-height: 0.96;
 
   letter-spacing: -.065em;
 }
@@ -115,7 +115,7 @@
   }
 
   .content h1 {
-    font-size: 56px;
+    font-size: clamp(40px, 13vw, 56px);
   }
 
   .content p {

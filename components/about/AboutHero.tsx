@@ -10,8 +10,8 @@ export default function AboutHero() {
     <section className={styles.hero}>
       <div className={styles.background}>
         <Image
-          src="/images/about/fachada-edificio.webp"
-          alt="Arquitectura contemporánea"
+          src="/images/about/ingeniera-obra.webp"
+          alt="Ingeniera de STRATON frente a una obra"
           fill
           priority
           sizes="100vw"
