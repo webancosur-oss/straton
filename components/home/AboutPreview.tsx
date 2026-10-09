@@ -48,7 +48,7 @@ export default function AboutPreview() {
             <Reveal delay={0.1}>
               <div className={styles.imageWrapper}>
                 <Image
-                  src="https://images.pexels.com/photos/28405903/pexels-photo-28405903.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                  src="/images/about/torre-contrapicado.webp"
                   alt="Arquitectura contemporánea y construcción"
                   fill
                   sizes="(max-width: 900px) 100vw, 55vw"

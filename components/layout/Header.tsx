@@ -11,6 +11,10 @@ import styles from './Header.module.css';
 
 const navigation = [
   {
+    label: 'Inicio',
+    href: '/',
+  },
+  {
     label: 'Nosotros',
     href: '/nosotros',
   },
@@ -161,6 +165,7 @@ export default function Header() {
               aria-expanded={menuOpen}
               aria-controls="mobile-navigation"
             >
+              <span />
               <span />
               <span />
             </button>

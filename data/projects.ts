@@ -42,13 +42,13 @@ export const projects: Project[] = [
     price: "S/ 229,170",
     status: "PRE VENTA",
 
-    image:
-      "https://images.pexels.com/photos/28405903/pexels-photo-28405903.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/images/projects/neo-rivera/fachada.webp",
 
     gallery: [
-      "https://images.pexels.com/photos/28405903/pexels-photo-28405903.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/5098740/pexels-photo-5098740.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/36506462/pexels-photo-36506462.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "/images/projects/neo-rivera/fachada.webp",
+      "/images/projects/neo-rivera/ingreso.webp",
+      "/images/projects/neo-rivera/terraza-wellness.webp",
+      "/images/projects/neo-rivera/sala.webp",
     ],
 
     logo: "/assets/images/neo-rivera.svg",
@@ -67,13 +67,13 @@ export const projects: Project[] = [
     price: "S/ 191,300",
     status: "PRE VENTA",
 
-    image:
-      "https://images.pexels.com/photos/5098740/pexels-photo-5098740.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/images/projects/neo-balto/fachada.webp",
 
     gallery: [
-      "https://images.pexels.com/photos/5098740/pexels-photo-5098740.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/7964877/pexels-photo-7964877.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/11692851/pexels-photo-11692851.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "/images/projects/neo-balto/fachada.webp",
+      "/images/projects/neo-balto/rooftop-terraza.webp",
+      "/images/projects/neo-balto/lobby.webp",
+      "/images/projects/neo-balto/spa-pet-wash.webp",
     ],
 
     logo: "/assets/images/neo-balto.svg",
@@ -92,13 +92,13 @@ export const projects: Project[] = [
     price: "S/ 228,755",
     status: "EN CONSTRUCCIÓN",
 
-    image:
-      "https://images.pexels.com/photos/36603627/pexels-photo-36603627.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/images/projects/neo-xport/fachada.webp",
 
     gallery: [
-      "https://images.pexels.com/photos/36603627/pexels-photo-36603627.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/35854242/pexels-photo-35854242.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/35155685/pexels-photo-35155685.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "/images/projects/neo-xport/fachada.webp",
+      "/images/projects/neo-xport/fachada-noche.webp",
+      "/images/projects/neo-xport/terraza.webp",
+      "/images/projects/neo-xport/sala.webp",
     ],
 
     logo: "/assets/images/neo-xport.svg",
@@ -117,13 +117,13 @@ export const projects: Project[] = [
     price: "S/ 314,000",
     status: "PRE VENTA",
 
-    image:
-      "https://images.pexels.com/photos/36506462/pexels-photo-36506462.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/images/projects/neo-eterna/fachada.webp",
 
     gallery: [
-      "https://images.pexels.com/photos/36506462/pexels-photo-36506462.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/13681731/pexels-photo-13681731.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/8773901/pexels-photo-8773901.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "/images/projects/neo-eterna/fachada.webp",
+      "/images/projects/neo-eterna/fachada-detalle.webp",
+      "/images/projects/neo-eterna/sky-garden.webp",
+      "/images/projects/neo-eterna/lobby.webp",
     ],
 
     logo: "/assets/images/neo-eterna.svg",
@@ -142,13 +142,13 @@ export const projects: Project[] = [
     price: "S/ 149,560",
     status: "EN CONSTRUCCIÓN",
 
-    image:
-      "https://images.pexels.com/photos/7964877/pexels-photo-7964877.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/images/projects/neo-origen/fachada.webp",
 
     gallery: [
-      "https://images.pexels.com/photos/7964877/pexels-photo-7964877.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/6778692/pexels-photo-6778692.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/38808615/pexels-photo-38808615.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "/images/projects/neo-origen/fachada.webp",
+      "/images/projects/neo-origen/ingreso.webp",
+      "/images/projects/neo-origen/zona-billar.webp",
+      "/images/projects/neo-origen/mirador-telescopio.webp",
     ],
 
     logo: "/assets/images/neo-origen.svg",
@@ -167,13 +167,13 @@ export const projects: Project[] = [
     price: "S/ 226,863",
     status: "PRE VENTA",
 
-    image:
-      "https://images.pexels.com/photos/11692851/pexels-photo-11692851.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/images/projects/distrito-san-carlos/fachada.webp",
 
     gallery: [
-      "https://images.pexels.com/photos/11692851/pexels-photo-11692851.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/34899097/pexels-photo-34899097.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/11363634/pexels-photo-11363634.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "/images/projects/distrito-san-carlos/fachada.webp",
+      "/images/projects/distrito-san-carlos/fachada-noche.webp",
+      "/images/projects/distrito-san-carlos/bar.webp",
+      "/images/projects/distrito-san-carlos/recepcion.webp",
     ],
 
     logo: "/assets/images/distrito-sancarlos.svg",
@@ -192,13 +192,13 @@ export const projects: Project[] = [
     price: "Todos Vendidos",
     status: "EN CONSTRUCCIÓN",
 
-    image:
-      "https://images.pexels.com/photos/35854242/pexels-photo-35854242.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/images/projects/moro-416/fachada.webp",
 
     gallery: [
-      "https://images.pexels.com/photos/35854242/pexels-photo-35854242.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/15183903/pexels-photo-15183903.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/35155685/pexels-photo-35155685.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "/images/projects/moro-416/fachada.webp",
+      "/images/projects/moro-416/fachada-atardecer.webp",
+      "/images/projects/moro-416/roof-garden.webp",
+      "/images/projects/moro-416/lobby.webp",
     ],
 
     logo: "/assets/images/moro416.svg",
@@ -217,13 +217,12 @@ export const projects: Project[] = [
     price: "S/ 177,720",
     status: "EN CONSTRUCCIÓN",
 
-    image:
-      "https://images.pexels.com/photos/5505119/pexels-photo-5505119.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/images/projects/camino-real/vista-aerea.webp",
 
     gallery: [
-      "https://images.pexels.com/photos/5505119/pexels-photo-5505119.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/2220483/pexels-photo-2220483.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/3297593/pexels-photo-3297593.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "/images/projects/camino-real/vista-aerea.webp",
+      "/images/projects/camino-real/ciclovia.webp",
+      "/images/projects/camino-real/gimnasio-exterior.webp",
     ],
 
     logo: "/assets/images/camino-real.svg",
@@ -242,13 +241,13 @@ export const projects: Project[] = [
     price: "S/ 82,185.54",
     status: "EN CONSTRUCCIÓN",
 
-    image:
-      "https://images.pexels.com/photos/16638589/pexels-photo-16638589.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/images/projects/zagari-resort-club/portico-ingreso.webp",
 
     gallery: [
-      "https://images.pexels.com/photos/16638589/pexels-photo-16638589.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/261156/pexels-photo-261156.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "/images/projects/zagari-resort-club/portico-ingreso.webp",
+      "/images/projects/zagari-resort-club/escultura.webp",
+      "/images/projects/zagari-resort-club/cabanas-domo.webp",
+      "/images/projects/zagari-resort-club/piscina-borde-infinito.webp",
     ],
 
     logo: "/assets/images/zagari.svg",
@@ -267,13 +266,12 @@ export const projects: Project[] = [
     price: "S/ 44,144",
     status: "ENTREGA INMEDIATA",
 
-    image:
-      "https://images.pexels.com/photos/2220483/pexels-photo-2220483.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/images/projects/las-colinas-de-moro/vista-aerea.webp",
 
     gallery: [
-      "https://images.pexels.com/photos/2220483/pexels-photo-2220483.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "/images/projects/las-colinas-de-moro/vista-aerea.webp",
+      "/images/projects/las-colinas-de-moro/calle.webp",
+      "/images/projects/las-colinas-de-moro/parque.webp",
     ],
 
     logo: "/assets/images/colinas-de-moro.svg",
@@ -292,13 +290,12 @@ export const projects: Project[] = [
     price: "S/ 18,000",
     status: "ENTREGA INMEDIATA",
 
-    image:
-      "https://images.pexels.com/photos/3297593/pexels-photo-3297593.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/images/projects/las-terrazas-de-concepcion/vista-aerea.webp",
 
     gallery: [
-      "https://images.pexels.com/photos/3297593/pexels-photo-3297593.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/161853/garden-landscape-lawn-green-161853.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "/images/projects/las-terrazas-de-concepcion/vista-aerea.webp",
+      "/images/projects/las-terrazas-de-concepcion/perspectiva-carretera-general.webp",
+      "/images/projects/las-terrazas-de-concepcion/perspectiva-av-leopoldo-pena.webp",
     ],
 
     logo: "/assets/images/las-terrazas-de-concepcion.svg",
@@ -321,13 +318,13 @@ export const projects: Project[] = [
     price: "Entregado",
     status: "ENTREGADO",
 
-    image:
-      "https://images.pexels.com/photos/37567579/pexels-photo-37567579.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/images/projects/neo-emperatriz/fachada.webp",
 
     gallery: [
-      "https://images.pexels.com/photos/37567579/pexels-photo-37567579.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/27806663/pexels-photo-27806663.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/13681731/pexels-photo-13681731.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "/images/projects/neo-emperatriz/fachada.webp",
+      "/images/projects/neo-emperatriz/fachada-frontal.webp",
+      "/images/projects/neo-emperatriz/sala.webp",
+      "/images/projects/neo-emperatriz/zona-parrillas.webp",
     ],
 
     logo: "/assets/images/neo-emperatriz.svg",
@@ -346,13 +343,10 @@ export const projects: Project[] = [
     price: "Entregado",
     status: "ENTREGADO",
 
-    image:
-      "https://images.pexels.com/photos/34249599/pexels-photo-34249599.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/images/projects/neo-18/fachada.webp",
 
     gallery: [
-      "https://images.pexels.com/photos/34249599/pexels-photo-34249599.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/8773901/pexels-photo-8773901.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/6778692/pexels-photo-6778692.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "/images/projects/neo-18/fachada.webp",
     ],
 
     href: deliveredWhatsapp,
@@ -370,13 +364,10 @@ export const projects: Project[] = [
     price: "Entregado",
     status: "ENTREGADO",
 
-    image:
-      "https://images.pexels.com/photos/27806663/pexels-photo-27806663.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/images/projects/alta-luz/fachada.webp",
 
     gallery: [
-      "https://images.pexels.com/photos/27806663/pexels-photo-27806663.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/38808615/pexels-photo-38808615.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/28405903/pexels-photo-28405903.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "/images/projects/alta-luz/fachada.webp",
     ],
 
     href: deliveredWhatsapp,
@@ -394,13 +385,10 @@ export const projects: Project[] = [
     price: "Entregado",
     status: "ENTREGADO",
 
-    image:
-      "https://images.pexels.com/photos/5505125/pexels-photo-5505125.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/images/projects/serena/fachada.webp",
 
     gallery: [
-      "https://images.pexels.com/photos/5505125/pexels-photo-5505125.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/7031606/pexels-photo-7031606.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "/images/projects/serena/fachada.webp",
     ],
 
     href: deliveredWhatsapp,
@@ -418,13 +406,10 @@ export const projects: Project[] = [
     price: "Entregado",
     status: "ENTREGADO",
 
-    image:
-      "https://images.pexels.com/photos/37244506/pexels-photo-37244506.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/images/projects/vita/fachada.webp",
 
     gallery: [
-      "https://images.pexels.com/photos/37244506/pexels-photo-37244506.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "/images/projects/vita/fachada.webp",
     ],
 
     href: deliveredWhatsapp,
@@ -442,13 +427,10 @@ export const projects: Project[] = [
     price: "Entregado",
     status: "ENTREGADO",
 
-    image:
-      "https://images.pexels.com/photos/9370034/pexels-photo-9370034.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/images/projects/zenda/fachada.webp",
 
     gallery: [
-      "https://images.pexels.com/photos/9370034/pexels-photo-9370034.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "/images/projects/zenda/fachada.webp",
     ],
 
     href: deliveredWhatsapp,
@@ -466,13 +448,10 @@ export const projects: Project[] = [
     price: "Entregado",
     status: "ENTREGADO",
 
-    image:
-      "https://images.pexels.com/photos/7121536/pexels-photo-7121536.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/images/projects/adamant/fachada.webp",
 
     gallery: [
-      "https://images.pexels.com/photos/7121536/pexels-photo-7121536.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/36506462/pexels-photo-36506462.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/11363634/pexels-photo-11363634.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "/images/projects/adamant/fachada.webp",
     ],
 
     href: deliveredWhatsapp,
@@ -490,13 +469,10 @@ export const projects: Project[] = [
     price: "Entregado",
     status: "ENTREGADO",
 
-    image:
-      "https://images.pexels.com/photos/31851512/pexels-photo-31851512.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/images/projects/dovle/fachada.webp",
 
     gallery: [
-      "https://images.pexels.com/photos/31851512/pexels-photo-31851512.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/36506462/pexels-photo-36506462.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/8773901/pexels-photo-8773901.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "/images/projects/dovle/fachada.webp",
     ],
 
     href: deliveredWhatsapp,
@@ -514,13 +490,10 @@ export const projects: Project[] = [
     price: "Entregado",
     status: "ENTREGADO",
 
-    image:
-      "https://images.pexels.com/photos/5505131/pexels-photo-5505131.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/images/projects/la-huerta-vista-alegre/vista-aerea.webp",
 
     gallery: [
-      "https://images.pexels.com/photos/5505131/pexels-photo-5505131.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "/images/projects/la-huerta-vista-alegre/vista-aerea.webp",
     ],
 
     logo: "/assets/images/huerta.svg",
@@ -539,13 +512,10 @@ export const projects: Project[] = [
     price: "Entregado",
     status: "ENTREGADO",
 
-    image:
-      "https://images.pexels.com/photos/34043935/pexels-photo-34043935.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/images/projects/viviendas-unifamiliares/fachada.webp",
 
     gallery: [
-      "https://images.pexels.com/photos/34043935/pexels-photo-34043935.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/7031606/pexels-photo-7031606.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "/images/projects/viviendas-unifamiliares/fachada.webp",
     ],
 
     href: deliveredWhatsapp,

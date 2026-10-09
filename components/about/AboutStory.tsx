@@ -31,7 +31,7 @@ export default function AboutStory() {
             <div className={styles.content}>
               <div className={styles.visual}>
                 <Image
-                  src="https://images.pexels.com/photos/28405903/pexels-photo-28405903.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                  src="/images/about/fachada-jardineras.webp"
                   alt="Arquitectura contemporánea y construcción"
                   fill
                   sizes="(max-width: 850px) 100vw, 55vw"

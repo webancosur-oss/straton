@@ -10,7 +10,7 @@ export default function AboutHero() {
     <section className={styles.hero}>
       <div className={styles.background}>
         <Image
-          src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=2000"
+          src="/images/about/fachada-edificio.webp"
           alt="Arquitectura contemporánea"
           fill
           priority

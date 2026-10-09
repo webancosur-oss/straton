@@ -13,6 +13,10 @@ interface MobileMenuProps {
 
 const navigation = [
   {
+    label: 'Inicio',
+    href: '/',
+  },
+  {
     label: 'Nosotros',
     href: '/nosotros',
   },

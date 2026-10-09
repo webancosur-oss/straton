@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import Container from '@/components/ui/Container';
 import Reveal from '@/components/ui/Reveal';
 
@@ -6,6 +8,19 @@ import styles from './ServicesHero.module.css';
 export default function ServicesHero() {
   return (
     <section className={styles.hero}>
+      <div className={styles.background}>
+        <Image
+          src="/images/services/edificio-fachada.webp"
+          alt="Edificio residencial en construcción"
+          fill
+          priority
+          sizes="100vw"
+          className={styles.backgroundImage}
+        />
+
+        <div className={styles.overlay} />
+      </div>
+
       <Container>
         <div className={styles.content}>
           <Reveal>

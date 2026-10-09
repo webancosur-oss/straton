@@ -1,5 +1,6 @@
 .hero {
-  min-height: 68vh;
+  position: relative;
+  min-height: 78vh;
 
   display: flex;
   align-items: flex-end;
@@ -10,9 +11,54 @@
   background: var(--color-primary-dark);
 
   color: var(--color-white);
+
+  overflow: hidden;
+}
+
+/* Background */
+
+.background {
+  position: absolute;
+  inset: 0;
+}
+
+.backgroundImage {
+  position: absolute !important;
+  inset: 0;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: cover;
+  object-position: center;
+
+  transform: scale(1.01);
+
+  transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(10, 31, 37, 0.3) 0%,
+      rgba(10, 31, 37, 0.35) 35%,
+      rgba(10, 31, 37, 0.78) 78%,
+      rgba(10, 31, 37, 0.94) 100%
+    );
+}
+
+.hero:hover .backgroundImage {
+  transform: scale(1.025);
 }
 
 .content {
+  position: relative;
+  z-index: 2;
+
   max-width: 1050px;
 }
 
@@ -73,5 +119,15 @@
 
   .content p {
     font-size: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .backgroundImage {
+    transition: none;
+  }
+
+  .hero:hover .backgroundImage {
+    transform: none;
   }
 }
